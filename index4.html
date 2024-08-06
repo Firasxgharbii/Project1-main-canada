@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FENG</title>
+    <link rel="icon" type="image/x-icon" href="./css/img/2.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvT.Nh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Nav Bar  -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <button class="menu-button">☰ Menu</button>
+            <div class="side-menu">
+                <div class="footer-links">
+                    <a href="https://www.loom.com/signup">Trouver un magasin</a>
+                    <a href="#">Compte</a>
+                    <a href="#">Nous contacter</a>
+                </div>
+            </div>
+            <form id="searchForm" onsubmit="handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+                <button type="submit">Rechercher</button>
+            </form>
+            <div id="results"></div>
+            
+        </div>
+        <div class="navbar-center">
+            <img src="./css/img/2.png" alt="FENG" class="logo">
+        </div>
+        <div class="navbar-right">
+            <span class="language-selector">Canada - français</span>
+            <a href="#" class="find-store">Trouver un magasin</a>
+            <a href="#" class="contact-us">Nous contacter</a>
+            <button class="account-button">👤 Compte</button>
+            <button class="cart-button">🛒 Panier</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content container text-center my-5">
+        <h1>Bienvenue chez Feng, votre destination en ligne pour des produits uniques et inspirants !</h1>
+        <p>Découvrez notre sélection de produits soigneusement choisis pour enrichir votre quotidien.</p>
+    </div>
+
+    <!-- Swiper Slider -->
+    <div class="swiper-container my-5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./css/img/chronext-kodd-magazine-montre-watch-luxury-luxe-fashion-mode-rolex--1920x1280.jpg" alt="Image 1" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/Les-petits-Marcels-Accessoires-hommes-et-femmes.jpg" alt="Image 2" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/magasin-vend-sacs-main-accessoires_865967-367193.jpg" alt="Image 3" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/0-pattern-louis-vuitton1-1200x801.jpg" alt="Image 4" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/G9AOKTGG781_N0000_0.webp" alt="Image 5" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/698710_Z8A2S_1000_001_100_0000_Light-Jumbo-GG-canvas-jacket.avif" alt="Image 6" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/cq5dam.web.hebebed.1000.1000.avif" alt="Image 7" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/Screenshot from 2024-06-19 19-37-55.png" alt="Image 8" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/Screenshot from 2024-06-19 19-38-38.png" alt="Image 9" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/Screenshot from 2024-06-19 19-41-16.png" alt="Image 10" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="./css/img/Screenshot from 2024-06-19 19-42-38.png" alt="Image 11" class="img-fluid"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Search Results Container -->
+    <div class="container my-5" id="results"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./css/img/2.png" alt="FENG LOGO">
+            </div>
+            <div class="footer-links">
+                <select class="language-selector">
+                    <option value="en">Canada</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="it">Italy</option>
+                    <option value="es">Spain</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="se">Sweden</option>
+                    <option value="ch">Switzerland</option>
+                    <option value="be">Belgium</option>
+                    <option value="dk">Denmark</option>
+                    <option value="fi">Finland</option>
+                    <option value="no">Norway</option>
+                    <option value="at">Austria</option>
+                    <option value="ie">Ireland</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="sg">Singapore</option>
+                    <option value="hk">Hong Kong</option>
+                    <option value="pl">Poland</option>
+                    <option value="pt">Portugal</option>
+                    <option value="cz">Czech Republic</option>
+                    <option value="hu">Hungary</option>
+                    <option value="gr">Greece</option>
+                    <option value="lu">Luxembourg</option>
+                    <option value="ro">Romania</option>
+                    <option value="bg">Bulgaria</option>
+                    <option value="hr">Croatia</option>
+                    <option value="ee">Estonia</option>
+                    <option value="lt">Lithuania</option>
+                    <option value="lv">Latvia</option>
+                    <option value="sk">Slovakia</option>
+                    <option value="si">Slovenia</option>
+                    <option value="cy">Cyprus</option>
+                    <option value="mt">Malta</option>
+                    <option value="is">Iceland</option>
+                    <option value="tr">Turkey</option>
+                    <option value="il">Palastine</option>
+                    <option value="in">India</option>
+                    <option value="br">Brazil</option>
+                    <option value="mx">Mexico</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="co">Colombia</option>
+                    <option value="pe">Peru</option>
+                    <option value="my">Malaysia</option>
+                    <option value="ph">Philippines</option>
+                    <option value="th">Thailand</option>
+                    <option value="za">South Africa</option>
+                </select>
+                <a href="#">All Worldwide Locations</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>FENG and the FENG logo are registered trademarks of FENG, Inc. All other marks are the property of their respective owners. Copyright © 2024 FENG Canada Co.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        
+            function handleSearch(event) {
+                event.preventDefault(); // Empêche le rechargement de la page
+                const query = document.getElementById('searchInput').value;
+                console.log('Terme de recherche:', query); // Log pour vérifier le terme de recherche
+                if (query) {
+                    fetch(`http://localhost:3308/search?q=${query}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log('Résultats de la recherche:', data);
+                            const resultsContainer = document.getElementById('results');
+                            resultsContainer.innerHTML = '';
+                            data.forEach(product => {
+                                const productElement = document.createElement('div');
+                                productElement.innerHTML = `
+                                    <h3>${product.nom}</h3>
+                                    <p>${product.description}</p>
+                                    <img src="${product.image}" alt="${product.nom}" class="img-fluid">
+                                    <a href="${product.url}" target="_blank">Voir plus</a>
+                                `;
+                                resultsContainer.appendChild(productElement);
+                            });
+                        })
+                        .catch(error => {
+                            console.error('Erreur lors de la recherche:', error);
+                        });
+                } else {
+                    alert('Veuillez entrer un terme de recherche');
+                }
+            }
+        </script>
+        
+    </script>
+</body>
+</html>
